@@ -1,5 +1,4 @@
-100DaysOfSwift
-Paul Hudson's 100 Days Of Swift challenge / https://www.hackingwithswift.com/100 
+Paul Hudson's 100 Days Of Swift challenge 
 
 
 Day 1./ Variables, simple data types, and string interpolation
