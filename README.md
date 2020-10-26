@@ -34,4 +34,3 @@ Test: Type annotations
 Simple types: Summary
 Test: Simple types
 
-...
