@@ -7,15 +7,9 @@ Variables
 Optional: Why does Swift have variables?
 Test: Variables
 
-
-
-
 Strings and integers
 Optional: Why is Swift a type-safe language?
 Test: Strings and integers
-
-
-
 
 Multi-line strings
 Optional: Why does Swift need multi-line strings?
@@ -40,4 +34,3 @@ Test: Type annotations
 Simple types: Summary
 Test: Simple types
 
-...
