@@ -178,94 +178,94 @@ REVIEW DAY
 
 
  #
- - [x] <b>Day 17</b>
+ - [x] <b>Day 17 / Project 1, part two</b>
 * Building a detail screen
 * Loading images with UIImage
 * Final tweaks: hidesBarsOnTap, safe area margins
  
  #
- - [x] <b>Day 18</b>
+ - [x] <b>Day 18 / Project 1, part three</b>
 * Wrap up
 * Review for Project 1: Storm Viewer
 
  #
- - [x] <b>Day 19</b>
+ - [x] <b>Day 19 / Project 2, part one</b>
 * Setting up
 * Designing your layout
 * Making the basic game work: UIButton and CALayer
  
  #
- - [x] <b>Day 20</b>
+ - [x] <b>Day 20 / Project 2, part two</b>
 * Guess which flag: random numbers
 * From outlets to actions: creating an IBAction
 
  #
- - [x] <b>Day 21</b>
+ - [x] <b>Day 21 / Project 2, part three</b>
 * Wrap up
 * Review for Project 2: Guess the Flag
 
  #
- - [x] <b>Day 22</b>
+ - [x] <b>Day 22 / Project 3</b>
 * About technique projects
 * UIActivityViewController explained
 * Wrap up
 * Review for Project 3: Social media
 
  #
- - [x] <b>Day 23</b>
+ - [x] <b>Day 23 / Milestone: Project 1-3</b>
 * What you learned
 * Key points
 * Challenge
 
  #
- - [x] <b>Day 24</b>
+ - [x] <b>Day 24 / Project 4, part one</b>
 * Setting up
 * Creating a simple browser with WKWebView
 * Choosing a website: UIAlertController action sheets
 
  #
- - [x] <b>Day 25</b>
+ - [x] <b>Day 25 / Project 4, part two</b>
 * Monitoring page loads: UIToolbar and UIProgressView
 * Refactoring for the win
 
  #
- - [x] <b>Day 26</b>
+ - [x] <b>Day 26 / Project 4, part three</b>
 * Wrap up
 * Review for Project 4: Easy Browser
 
  #
- - [x] <b>Day 27</b>
+ - [x] <b>Day 27 / Project 5, part one</b>
 * Capture lists in Swift: what’s the difference between weak, strong, and unowned references?
 * Setting up
 * Reading from disk: contentsOfFile
 * Pick a word, any word: UIAlertController
 
  #
- - [x] <b>Day 28</b>
+ - [x] <b>Day 28 / Project 5, part two</b>
 * Prepare for submission: lowercased() and IndexPath
 * Checking for valid answers
 * Or else what?
 
  #
- - [x] <b>Day 29</b>
+ - [x] <b>Day 29 / Project 5, part three</b>
 * Wrap up
 * Review for Project 5: Word Scramble
 
  #
- - [x] <b>Day 30</b>
+ - [x] <b>Day 30 / Project 6, part one</b>
 * Setting up
 * Advanced Auto Layout
 * Auto Layout in code: addConstraints() with Visual Format Language
 
  #
- - [x] <b>Day 31</b>
+ - [x] <b>Day 31 / Project 6, part two</b>
 * Auto Layout metrics and priorities: constraints(withVisualFormat:)
 * Auto Layout anchors
 * Wrap up
 * Review for Project 6: Auto Layout
 
  #
- - [x] <b>Day 32</b>
+ - [x] <b>Day 32 / Milestone: Projects 4-6</b>
 * What you learned
 * Key points
 * Challenge
