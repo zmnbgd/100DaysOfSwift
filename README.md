@@ -22,3 +22,6 @@ Float and Double
 Swift have two more data types to store data called Float and Double. This is a Swift way to store data with fractional numbers: 3, 30, 300.
 Official Apple recommendation is always to use Double because it has highest accuracy. 
 
+String interpolation
+
+String interoplation is a very simple thing, combining variables and constants inside a string. 
