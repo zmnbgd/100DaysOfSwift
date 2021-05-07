@@ -92,6 +92,14 @@ You can read any value from the dictionary just by knowing it’s key.
 As arrays, you can store a wide variety of values inside dictionaries, although the keys are most commonly strings.
 
 
+Conditional statements
+
+Sometimes you want code to execute only if certain condition is true, and in Swift that is represented primarily bu the if and else statements. 
+First step is give Swift a condition to check, second a block of code to execute if condition is true.
+Also you can write else and provide a block of code to execute if condition is false, or even else if  and have more conditions.
+
+
+
 
 
 
