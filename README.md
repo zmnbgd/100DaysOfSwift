@@ -1,7 +1,6 @@
 # 100DaysOfSwift
 Paul Hudson's 100 Days Of Swift challenge 
 
-Day 1.
 
 Variables and Constants
 
@@ -59,7 +58,6 @@ String interpolation
 
 String interoplation is a very simple thing, combining variables and constants inside a string. 
 
-Day 2. 
 
 Arrays
 
@@ -97,6 +95,42 @@ Conditional statements
 Sometimes you want code to execute only if certain condition is true, and in Swift that is represented primarily bu the if and else statements. 
 First step is give Swift a condition to check, second a block of code to execute if condition is true.
 Also you can write else and provide a block of code to execute if condition is false, or even else if  and have more conditions.
+
+Also you can write else and provide a block of code to execute if condition is false, or even else if  and have more conditions.
+
+
+Evaluation multiple conditions
+
+Swift can evaluate as many conditions as you want, but they all need to be true in order to execute the block of code. 
+To check multiple conditions use the && operator, it means “and”.
+
+
+Looking for the opposite of truth
+
+Sometimes is important to check is condition false ( not true ), you can do this with the ( ! ) operator.
+
+
+Loops 
+
+Simple programming constructs that repeat a block of code for as long as condition is true.
+Close range operator is three periods in a row ( … )
+Half open range operator looks like ( ..< ) and counts from one number up to and excluding another, for example 1..<5 will count 1, 2, 3, and 4.
+
+
+Looping over arrays
+
+Swift can loop over all the elements in an array because Swift knows what kind of data array holds, it will go through every element in array assign it to a constant you name and then run a block of code.
+Also you can use for i in loop construct to loop through arrays, because you can use that constant to index into an array. 
+
+
+Inner loops
+
+You can put loops inside the loops.
+Even loop inside the loops inside the loops.
+
+
+
+
 
 
 
