@@ -129,6 +129,21 @@ You can put loops inside the loops.
 Even loop inside the loops inside the loops.
 
 
+While loops
+
+While loops are third kind of loop, which repeat a block of code until you tell it to stop.
+Keyword is called break, it’s used to exit a while or for loop at the point you decide. Without the keyword break, statement the loop is an infinite loop.
+
+Counterpart to break is called continue. Breaking out of a loop stops execution immediately and continues directly after the loop, counting a loop only exits the current iteration of the loop, it will be jump back to the top of the loop and pick up from there.
+
+
+Switch case
+
+Another type of flow control called switch / case, it’s advanced for if statement, because you can have lots of matches and Swift will execute the right one.
+
+
+
+
 
 
 
