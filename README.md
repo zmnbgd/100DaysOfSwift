@@ -142,6 +142,18 @@ Switch case
 Another type of flow control called switch / case, it’s advanced for if statement, because you can have lots of matches and Swift will execute the right one.
 
 
+Functions
+
+Functions let you define reusable pieces of code that perform specific functionality.
+
+
+Return values
+
+
+Functions can return a value by writing -> then a data type. Swift will ensure that your function will return a value no matter what, and you make a promise about what your code does.
+
+
+
 
 
 
