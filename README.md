@@ -154,6 +154,28 @@ Functions can return a value by writing -> then a data type. Swift will ensure t
 
 
 
+Optionals
+
+
+Swift is a very safe language, it works hard to ensure your code never fails. Most common ways that code fails is when it tries to use data that is bad or missing.
+Swift has solution: Optionals. An optional value is one that might have a value or might not.
+
+When we use -> String, it means “this will definitely return a string” which means this function cannot return no value. If we wanted to tell Swift that this function might return a value or it might not, we need to use this instead String? - question mark means “optional String”. 
+In Swift no value has a special name: nil.
+
+Swift wants your code to be safe, and trying to use a nil value is a bad idea. It might screw up your app logic, or it might make your user interface show the wrong thing. When you declare a value as optionals Swift will make sure you handle it safely. 
+
+Swift has two solutions first solutions is called optional unwrapping, and it’s done inside a conditional statement using special syntax. it does two things at same time: check optional has a value and if it does unwraps it into a non-optional type then runs code block. 
+
+When you work with these “might be there, might be not” value Swift force you to unwrap them before using them. That’s what if let syntax does, if the optional has a value then unwrap it and use it, otherwise don’t use it at all.
+
+
+Force unwrapping optionals
+
+Swift lets you override it’s safety by the exclamation mark character ( ! ). If you know that an optional has a value you can force unwrap it by placing this exclamation mark after it. but you have to be careful, if you try this  on a varible that does not have a value, your code will crash.
+
+
+
 
 
 
