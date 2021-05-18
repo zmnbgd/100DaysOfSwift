@@ -175,6 +175,21 @@ Force unwrapping optionals
 Swift lets you override it’s safety by the exclamation mark character ( ! ). If you know that an optional has a value you can force unwrap it by placing this exclamation mark after it. but you have to be careful, if you try this  on a varible that does not have a value, your code will crash.
 
 
+Implicitly unwrapped optionals
+
+You can use this syntax, exclamation mark syntax to create implicitly unwrapped optionals.
+
+Regular variable must contain a value.
+Optional variable might contain a value or might not. It must be unwrapped before it is used.
+
+An implicitly unwrapped optional might contain a value or might not, but it does not need to be unwrapped before it is used. Swift wont’t check for you so you need to be extra careful.
+
+There are two times you ar goring to meet implicitly unwrapped optionals. The first is when you’re working with 🍏 API’s, these frequently return implicitly unwrapped optionals, because their code  pre-dates Swift, and that was not how things were done.
+
+The second is when you’re working with user interface elements in UIKit. These need to be declared up front, but you can’t use them until they have been created by iOS and it likes to create user interface elements at the last possible moment to avoid any unnecessary work.
+
+
+
 
 
 
