@@ -189,6 +189,30 @@ There are two times you ar goring to meet implicitly unwrapped optionals. The fi
 The second is when you’re working with user interface elements in UIKit. These need to be declared up front, but you can’t use them until they have been created by iOS and it likes to create user interface elements at the last possible moment to avoid any unnecessary work.
 
 
+Optional chaining
+
+Swift has two techniques to help make code less complicated working with optionals. First is called optional chaining which lets you run code only if your optional has a value.
+
+Everything after question mark, which is the optional chaining, will be run if everything before the question mark has a value. Swift will check the code from left to right until finds nil, at which point it stops.
+
+
+The nil coaleascing operator 
+
+Double question mark is the nil coalescing operator ( ?? ). What it does is let you say use value A if you can, but if value A is nil then use value B. So if A is an optional and has a value it gets used If A is present and has no value B gets used, you will definitely have a value.
+
+
+Enumerations
+
+Called enum, are way to define your own kind of value. In some other programming languages they are simple little things, but Swift adds a huge amount of power to them.
+Enum is useful inside switch / case blocks because Swift knows you might enum can have.
+
+
+Enums with additional values
+
+Enum can have values attached to them. 
+
+
+
 
 
 
