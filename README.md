@@ -212,6 +212,39 @@ Enums with additional values
 Enum can have values attached to them. 
 
 
+Structs
+
+Structs are complex data types, they are made up of multiple values. You then create instance of the struct and fill in its values. Then you can pass it around as a single value in your code. 
+When you define struct, Swift makes memberwise initializer, that means you create struct passing initial values for its properties.
+
+Once you created an instance of struct you can read its properties just by writing the name of the struct, a period, then the property you want read.
+
+
+
+Classes
+
+Class is another way of build complex data types called classes. They look similar to struct, but have a number of important differences:
+Don’t have automatic memberwise initializer for classes, you need to write your own.
+Can define class as being based off another class adding new thing 
+If you copy an object, both copies point at the same data default
+
+
+
+Initializing an object
+
+In sturct Swift automatically produces a memberwise initializer for us that forced us to provide values for the properties. But that doesn’t happen with classes so Swift can’t sure they will be given values.
+
+There are three solutions: make the values optional strings, give them default values, or write own initializers. 
+The first option is clumsy because it introduces optionals all over our code where they don’t need to be. Th second option works, only if default values will be used. Third option is the right one, write our initializer.
+
+To do this create a function inside the class called init() that takes the parameters we care about.
+
+First you don’t write func before init() function.Second, because the parameter names being passed in are the same as the names of the properties we want to assign, you use self. to make your meaning clear.
+When you write function inside the class, it’s called a method. In Swift you write func whether it’s a function or a method.
+And Swift requires that all non-optional properties have a value by the end of the initiaizer, or by the time the initializer calls any other method, which ever comes first.
+
+
+
 
 
 
