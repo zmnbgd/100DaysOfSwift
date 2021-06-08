@@ -83,6 +83,21 @@ You can use limited set of operators on arrays:
 and += 
 
 
+Sets
+
+Sets are collections of values just like arrays, except they have two differences. First one is items in sets aren’t stored in any order. - random order. Second, all items must be unique, can’t appear twice in a set.
+
+Tuples
+
+Tuples allow you to store several values together in a single value.
+They size are fixed.
+Can’t change the type of items in tuple. 
+
+var name = (first: “Minja”, last: “Zivanovic”)
+name.0
+name.first
+
+
 Dictionaries
 
 Dictionaries are another type of collection, but different. When you make dictionary you write it’s key, then a colon, then its value.
@@ -242,6 +257,215 @@ To do this create a function inside the class called init() that takes the param
 First you don’t write func before init() function.Second, because the parameter names being passed in are the same as the names of the properties we want to assign, you use self. to make your meaning clear.
 When you write function inside the class, it’s called a method. In Swift you write func whether it’s a function or a method.
 And Swift requires that all non-optional properties have a value by the end of the initiaizer, or by the time the initializer calls any other method, which ever comes first.
+
+
+Class inheritance
+
+The second difference between classes and structs are that classes can build on each other to produce greater things, known as class inheritance. This technique is used in Cocoa Touch, even in the most basic programs.
+
+
+class Singer {
+var name: String
+var age: Int
+
+init(name: String, age: Int) {
+self.name = name
+self.age = age 
+
+}
+
+func sing() {
+print(“La la la la la”) 
+
+    }
+}
+
+Now we can create an instance of that object calling initializer, then read out its properties and call its method:
+
+vat taylor = Singer(name: “Taylor”, age: 25)
+taylor.name
+taylor.age
+taylor.sing()
+
+That is the basic class.
+Now if we want to define CountrySinger class that has everything Singer class does.
+
+class CountrySinger: Singer {
+
+}
+
+That colon means CountrySinger extends Singer, and we called subclass, and Singer we called parent class, or superclass.
+If you want to have its own sing() method you need to override, that means, method that is implemented by parent class I want to change it for this subclass.
+If you don’t use the override Swift will not change a method, and if you want to override and there wasn;t anything to override Swift will point out your error.
+
+class CountySinger: Singer {
+
+override func sing() {
+
+print(“Trucks, girls, and liquor”)
+ 
+     }
+}
+
+
+Now you want to make new class called HeavyMetal Singer, and store a new property called noiseLevel.
+Swift wants all non optional properties to have a value
+Singer class doesn’t have a noiseLevel property
+You need to create a custom initilizer for HeavyMetalSinger that accepts a noise level
+New initializer also needs to know the name and age of the heavy metal singer, so it can pass it onto the superclass Singer
+Passing data to the superclass is done through a method call and you can’t make method calls in initializers until you have given all your properties values
+So you need to set own property noiseLevel then pass on the other parameters for the superclass
+
+
+class HeavyMetalSingerČ Singer {
+var noiseLevel: Int 
+
+init(name: String, Age: Int, noiseLevel: Int) {
+
+self.noiseLevel = noiseLevel
+
+super.init(name: name, age: age) 
+
+}
+
+override func sing() {
+print(“Grrrrrrrr rarghhhh rargrrrrr rarrrrrrgh”)
+
+   }
+
+}
+
+Values VS References 
+
+When you copy a struct whole thing is duplicated, including all its values. This means that changing one copy of a struct doesn’t change the other copies, they are all individual. 
+With classes each copy of an object points at the same original object, so if you change one, they all change. 
+Swift calls struct value types because they just point at a value, and classes reference type, because objects are just shared references to the real value.
+
+Value types:
+String
+Integer
+Double
+Boolean
+Array
+Enum
+Dictionary
+Set
+Tuple
+Struct
+
+References types:
+
+Classes
+Closures 
+
+The difference between value types and refereces types are imporatnt, and choice between struct and classes. 
+
+If you want to have one shared state that gets passed around and modified in place, you are looking for classes. You can pass them into functions or store them in arrays, modify them in there and have that change reflected in the rest of your program.
+
+If you want to avoid shared state where one copy can’t affect all the others you are looking for structs. You can pass them into functions, or store them in arrays, modify them in there, and they won’t change wherever else they are referenced.
+
+To summarise this difference between structs and classes: classes offer more flexibility, where structs offer more safety. Basic rule always use structs until you have a reason to use classes.
+Properties
+
+Structs and classes can have theis own variables and constatnts and these are called properties.
+
+These let you attach values to your types to represent them uniquely but because types can also have methods you can have behave according to their own data.
+
+Methods are functions that are associated with a particular type, classes, structs and enums.
+
+struct Person {
+var clothes: String
+var shoes: String
+
+func describe() {
+print(“I like wearing \(clothes) with \(shoes)”)
+
+    }
+}
+
+let teylor = Person(clothes: “T-shirt”, shoes: “sneakers”) 
+let other = Person(clothes: “short skirts”, shoes: “high heels”)
+
+teylor. describe()
+other.describe()
+
+
+When we use property inside a method it will automatically use the value that belongs to the same object.
+
+Properties are associate values with a particular class, structure or enumeration. 
+Stored properties store constant and variable value as part of an instance, whereas computed properties calculate (rather than store) a value. 
+Computed properties are provided by classes, structures, and enumerations. Stored properties are provided only by classes and structures.
+
+Stored and computed properties are usually associated with instance of a particular type. However, properties can also be associated with the type itself. Such properties are known as type properties. 
+
+In addition you can define property observers to monitor changes in a property’s value, witch you can respond to with custom actions. Property observers can be added to stored properties you define yourself, and also to properties that a subclass inherits from its superclass. 
+
+Property observers
+
+Swift let you add code to be run when a property is about to be changed or has been changed. This is frequently a good way to have a user interface update when a value change.
+
+There a two kinds of observer: 
+
+willSet
+
+didSet
+
+and they are called before or after a property is changed.
+
+In willSet Swift provides your code with a special value called newValue that contains what the new property value is going to be.
+In didSet you are given old value to represent the previous vale. 
+
+struct person {
+var clothes: String {
+
+willSet {
+updateUI(“I’m changing from \(clothes) to \(newValue)”) 
+
+didSet {
+updateUI(“I just changed from \(oldValue) to \(clothes)”) 
+
+      }
+   }
+}
+
+func updateUI(msg: String) {
+print(msg)
+
+var taylor = Person(clothes: “T-shirts”) 
+taylor.clothes = “short skirts” 
+
+
+Computed properties
+
+Computed properties are common in Apple’s code by less common in our code. Many programmers prefer to use methods because their behavior is a clearer.
+
+
+Static properties and methods
+
+Swift lets you create properties and methods that belong to a type, rather than to instance of a type. This is helpful to organizing your data.
+Swift calls these shared properties “static properties”, and you create one just by using the static keyword. Once that is done you access the property by using the full name of the type.
+
+Basic static methods belong to the class rather than to instance of a class, you can’t use it to access any non-static properties from the class.
+
+
+Access control
+
+This is an important feature, it lets you specify what data inside structs and classes should be exposed to the outside world, and you get to choose three modifiers.
+
+Public: everyone can read and write the property
+Internal: only Swift code can read and write property
+Private: only Swift code in the same file as the type can read and write the property
+
+Most of the time you don’t need to specify access control, but sometimes you want to explicitly set a property to be private, because stops others from accessing it directly.
+
+
+Polymorphism and type casting
+
+Because classes can inherit each other it means one class is effectively a superset of another, class B has all the thing A has with a few extras. This in turn means that you can treat B as type B or as type A depending on your needs. 
+Because any instance of class B is inherited from class A it can be treated just as either class A or class B. This is called “polymorhism”.
+
+If you have class A, and data in the array are album, studio album, and live album, this is fine because Swift are all those data descended form the class we call the Album class, so they share the same basic behaviour.
+
 
 
 
