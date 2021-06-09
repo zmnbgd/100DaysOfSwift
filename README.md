@@ -467,6 +467,16 @@ Because any instance of class B is inherited from class A it can be treated just
 If you have class A, and data in the array are album, studio album, and live album, this is fine because Swift are all those data descended form the class we call the Album class, so they share the same basic behaviour.
 
 
+Converting types with type casting
+
+You will often find you have an object of a certain type, but really you know it’s a different type. Sadly, if Swift doesn’t know what you know, it won’t build your code. So there’s a solution, and it’s called type casting: converting an object of one type to another.
+Type casting in Swift comes in three forms, but most of the time you’ll only meet two: as? and as!.
+Known as optional downcasting (as?) and forces downcasting (as!). 
+First one,  optional downcasting means “I think this conversation is true, but it might fail”.
+Second one means “I know this conversion might be true, and I’m happy for my app to crash if I’m wrong”.
+When I say “conversation” I don’t mean that the object literally transformed, instead it’s just converting how Swift treats the object, telling that an object it thought was type A is actually type E. 
+
+
 
 
 
