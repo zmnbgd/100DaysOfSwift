@@ -477,6 +477,12 @@ Second one means “I know this conversion might be true, and I’m happy for my
 When I say “conversation” I don’t mean that the object literally transformed, instead it’s just converting how Swift treats the object, telling that an object it thought was type A is actually type E. 
 
 
+Closures
+
+Swift has another type of data that is used extensively in Swift, and it’s called a closure. 
+Closure can be thought of as a variable that holds code, so where an nteger holds 0 a closure holds lines a lines of Swift code. It’s different to a function, because closures are a data type in their own right you can pass a closure as a oarameter or store it as a  property. Closures also capture the enviroment where are created, which means they take copy of the values that are inside them.
+
+
 
 
 
