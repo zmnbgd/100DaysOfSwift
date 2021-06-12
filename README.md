@@ -483,6 +483,23 @@ Swift has another type of data that is used extensively in Swift, and it’s cal
 Closure can be thought of as a variable that holds code, so where an nteger holds 0 a closure holds lines a lines of Swift code. It’s different to a function, because closures are a data type in their own right you can pass a closure as a oarameter or store it as a  property. Closures also capture the enviroment where are created, which means they take copy of the values that are inside them.
 
 
+Project 1
+
+This project produce an application that lets users scroll throught a list of images, then select one to view.
+
+Behind the scenes an iOS app is actually a directory containing lots of files, all the media assets your app uses any visual layout files, plus a variety of other things such as metadata and security entitlements.
+These app directories are called bundles. And they have the file extension .app. Because our media files are loose inside the folder, we can ask the system to tell us all the files that are in there pull out ones we want. You may have noticed taht all the images start with the name “nssl”, so tas is simple, list all the files name in our app’s directory, and pull out the ones that start with “nssl”.
+NSBundle nad NSFileManager are data types that can do some great work (NS is short for NeXTSTEP software that Apple bought in 1997., technology that still today lies at the heart of iOS). All UI (User Interface) NS data types are avalible on iOS.
+
+UINavigatonController, means, UI - user interface component designed for iOS
+Controller, part means it provides functionality.
+
+Controllers are part of the holy trinity of software development: Model, View, Controller.
+In a ideal world, every part of your app can be split info one of these three types.
+Model: something that describes the data you are working with.
+View: The user interface of your app
+Controller: the code that sends model data to and from view.
+
 
 
 
