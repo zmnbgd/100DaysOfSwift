@@ -503,6 +503,25 @@ Controller: the code that sends model data to and from view.
 Here are just some of the things we've covered, constants and variables, method overrides, table views and image views, app bundles, NSFileManager, typecasting, arrays, loops, optionals, view controllers, storyboards, outlets, Auto Layout, UIImage, image views.
 
 
+Project 2
+
+What is new:
+Navigation Controller
+UIButton
+asset catalog
+
+Making a game Guess the flag using UIKit, and learning about integers, buttons, collors and actions.
+Guess the flag is the game that shows some random flags to user and ask them to choose wich one belongs to a particular country. 
+
+Designing layout
+
+In game we’re going to show user three flags, with the name of the country to guess shown in the navigation bar at the top.
+
+Then we draw three UIButtons onto the canvas. Then resize them by jumping into size inspector. next step is to create Auto Layout rules.
+Select flags from the project file and drag them into the Xcode window in your asset catalog.
+Then you create outlet for each flag.
+
+
 
 
 
