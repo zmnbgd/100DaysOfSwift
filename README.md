@@ -485,10 +485,10 @@ Closure can be thought of as a variable that holds code, so where an nteger hold
 
 Project 1
 
-This project produce an application that lets users scroll throught a list of images, then select one to view.
+This project produce an application that lets users scroll trought a list of images, then select one to view.
 
 Behind the scenes an iOS app is actually a directory containing lots of files, all the media assets your app uses any visual layout files, plus a variety of other things such as metadata and security entitlements.
-These app directories are called bundles. And they have the file extension .app. Because our media files are loose inside the folder, we can ask the system to tell us all the files that are in there pull out ones we want. You may have noticed taht all the images start with the name “nssl”, so tas is simple, list all the files name in our app’s directory, and pull out the ones that start with “nssl”.
+These app directories are called bundles. And they have the file extension .app. Because our media files are loose inside the folder, we can ask the system to tell us all the files that are in there pull out ones we want. You may have noticed that all the images start with the name “nssl”, so tas is simple, list all the files name in our app’s directory, and pull out the ones that start with “nssl”.
 NSBundle nad NSFileManager are data types that can do some great work (NS is short for NeXTSTEP software that Apple bought in 1997., technology that still today lies at the heart of iOS). All UI (User Interface) NS data types are avalible on iOS.
 
 UINavigatonController, means, UI - user interface component designed for iOS
@@ -499,6 +499,9 @@ In a ideal world, every part of your app can be split info one of these three ty
 Model: something that describes the data you are working with.
 View: The user interface of your app
 Controller: the code that sends model data to and from view.
+
+Here are just some of the things we've covered, constants and variables, method overrides, table views and image views, app bundles, NSFileManager, typecasting, arrays, loops, optionals, view controllers, storyboards, outlets, Auto Layout, UIImage, image views.
+
 
 
 
