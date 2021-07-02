@@ -506,9 +506,15 @@ Here are just some of the things we've covered, constants and variables, method 
 Project 2
 
 What is new:
+
 Navigation Controller
 UIButton
 asset catalog
+CA Layer - core animation type
+UIColor data type
+CGColor Apple graphics framework
+UIAlertController
+UIAlertAction
 
 Making a game Guess the flag using UIKit, and learning about integers, buttons, collors and actions.
 Guess the flag is the game that shows some random flags to user and ask them to choose wich one belongs to a particular country. 
