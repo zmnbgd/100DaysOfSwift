@@ -527,6 +527,19 @@ Then we draw three UIButtons onto the canvas. Then resize them by jumping into s
 Select flags from the project file and drag them into the Xcode window in your asset catalog.
 Then you create outlet for each flag.
 
+Project 3
+
+What is new:
+UIActivityViewController
+BarButtonItem
+#selector
+
+
+Sharing things using iOS uses a standard component that other apps can plug into, This component is called UIActivityViewController, and you can tell what kind of data you want to share.
+As we are working with images in Project 1 UIActivityViewController will gives us functionality to share by iMessage, email, Twitter, and Facebook, as well as saving the image to the photo library, assigning it to contact, and more.
+Project 1 used a UINavigationController to let users move between two screens, UINavigationController nas a bar across the top called a UINavigationBar, and we can add buttons to this navigation bar.
+
+
 
 
 
